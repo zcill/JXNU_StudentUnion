@@ -1,0 +1,25 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'StudentUnion' do
+
+pod 'Realm'
+pod 'AFNetworking'
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'AVOSCloud'
+pod 'MBProgressHUD'
+pod 'hpple'
+pod 'Wilddog'
+pod 'IQKeyboardManager'
+
+end
+
+target 'StudentUnionTests' do
+
+end
+
+target 'StudentUnionUITests' do
+
+end
