@@ -1,0 +1,28 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7B4B2663D4C17A2EB8A61FF4D09AA969E0073133",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7B4B2663D4C17A2EB8A61FF4D09AA969E0073133" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2E42F553-BB31-459E-9090-0E7697FE4FED",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7B4B2663D4C17A2EB8A61FF4D09AA969E0073133" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "StudentUnion",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Project\/StudentUnion\/StudentUnion.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zcill\/JXNU_StudentUnion.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B4B2663D4C17A2EB8A61FF4D09AA969E0073133"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zcill\/JXNU_StudentUnion.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B4B2663D4C17A2EB8A61FF4D09AA969E0073133"
+    }
+  ]
+}
