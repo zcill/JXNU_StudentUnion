@@ -10,6 +10,7 @@
 #import "ZCWorkNewsCell.h"
 #import "ZCWorkNewsModel.h"
 #import "ZCNewsDetailTableViewController.h"
+#import "ZCTeamTableViewController.h"
 
 @interface ZCStudentUnionTableViewController ()
 @property (nonatomic, strong) NSMutableArray *dataSource;
@@ -18,13 +19,19 @@
 @implementation ZCStudentUnionTableViewController
 
 - (IBAction)headerViewButtonClicked:(UIButton *)sender {
-    DLog(@"%@", sender.currentImage);
+
+    ZCTeamTableViewController *teamVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ZCTeamTableViewController"];
+    teamVC.teamName = sender.currentTitle;
+    [self.navigationController pushViewController:teamVC animated:YES];
+
+    DLog(@"%@", sender.currentTitle);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.dataSource = [NSMutableArray arrayWithCapacity:0];
+    [self fetchNewsData];
     
     self.tableView.tableFooterView = [[UIView alloc] init];
     self.refreshControl = [[UIRefreshControl alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
@@ -36,12 +43,13 @@
 }
 
 - (void)fetchNewsData {
-    
+
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+
     NSMutableArray *tmpArray = [NSMutableArray arrayWithCapacity:0];
-    
+
     AVQuery *query = [AVQuery queryWithClassName:@"StudentWorkNews"];
     [query includeKey:@"title"];
-    [query includeKey:@"content"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             
@@ -51,8 +59,9 @@
             self.dataSource = tmpArray;
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.tableView reloadData];
+                [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+                [self.refreshControl endRefreshing];
             });
-            [self.refreshControl endRefreshing];
         }
     }];
     
@@ -66,7 +75,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     ZCNewsDetailTableViewController *vc = (ZCNewsDetailTableViewController *)[segue destinationViewController];
-    AVObject *newsObject = [_dataSource objectAtIndex:indexPath.row];
+    AVObject *newsObject = _dataSource[indexPath.row];
     vc.objectId = newsObject.objectId;
 }
 

@@ -49,28 +49,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setupToolBar {
-    
-    UIToolbar *toolBar = self.navigationController.toolbar;
-    
-    toolBar.barTintColor = [UIColor whiteColor];
-    toolBar.tintColor = [UIColor grayColor];
-    
-    // 间距
-    UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    fixedSpace.width = 20;
-    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    
-    // 按钮
-    UIBarButtonItem *backItem = [self barButtonItemWithImageNamed:@"toolbar_back" action:@selector(backToLastViewController:) width:25 height:25];
-    UIBarButtonItem *wechatItem = [self barButtonItemWithImageNamed:@"toolbar_wechat" action:nil width:29.6 height:25];
-    UIBarButtonItem *pengyouquanItem = [self barButtonItemWithImageNamed:@"toolbar_pengyouquan" action:nil width:25 height:25];
-    UIBarButtonItem *weiboItem = [self barButtonItemWithImageNamed:@"toolbar_weibo" action:nil width:29.5 height:25];
-    UIBarButtonItem *moreItem = [self barButtonItemWithImageNamed:@"toolbar_more" action:nil width:25 height:25];
-    
-    self.toolbarItems = @[fixedSpace, backItem, flexibleSpace, wechatItem, flexibleSpace, pengyouquanItem, flexibleSpace, weiboItem, flexibleSpace, moreItem, fixedSpace];
-}
-
 - (UIBarButtonItem *)barButtonItemWithImageNamed:(NSString *)imageName action:(SEL)action width:(CGFloat)width height:(CGFloat)height {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setFrame:CGRectMake(0, 0, width, height)];
@@ -122,6 +100,29 @@
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewAutomaticDimension;
+}
+
+#pragma mark - UI界面
+- (void)setupToolBar {
+    
+    UIToolbar *toolBar = self.navigationController.toolbar;
+    
+    toolBar.barTintColor = [UIColor whiteColor];
+    toolBar.tintColor = [UIColor grayColor];
+    
+    // 间距
+    UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    fixedSpace.width = 20;
+    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    
+    // 按钮
+    UIBarButtonItem *backItem = [self barButtonItemWithImageNamed:@"toolbar_back" action:@selector(backToLastViewController:) width:25 height:25];
+    UIBarButtonItem *wechatItem = [self barButtonItemWithImageNamed:@"toolbar_wechat" action:nil width:29.6 height:25];
+    UIBarButtonItem *pengyouquanItem = [self barButtonItemWithImageNamed:@"toolbar_pengyouquan" action:nil width:25 height:25];
+    UIBarButtonItem *weiboItem = [self barButtonItemWithImageNamed:@"toolbar_weibo" action:nil width:29.5 height:25];
+    UIBarButtonItem *moreItem = [self barButtonItemWithImageNamed:@"toolbar_more" action:nil width:25 height:25];
+    
+    self.toolbarItems = @[fixedSpace, backItem, flexibleSpace, wechatItem, flexibleSpace, pengyouquanItem, flexibleSpace, weiboItem, flexibleSpace, moreItem, fixedSpace];
 }
 
 @end

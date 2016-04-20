@@ -13,7 +13,6 @@
 		4C4D613E1CB368F0000E64F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D613D1CB368F0000E64F6 /* main.m */; };
 		4C4D61411CB368F0000E64F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D61401CB368F0000E64F6 /* AppDelegate.m */; };
 		4C4D61471CB368F0000E64F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D61451CB368F0000E64F6 /* Main.storyboard */; };
-		4C4D61491CB368F0000E64F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D61481CB368F0000E64F6 /* Assets.xcassets */; };
 		4C4D614C1CB368F0000E64F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D614A1CB368F0000E64F6 /* LaunchScreen.storyboard */; };
 		4C4D61571CB368F1000E64F6 /* StudentUnionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D61561CB368F1000E64F6 /* StudentUnionTests.m */; };
 		4C4D61621CB368F1000E64F6 /* StudentUnionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D61611CB368F1000E64F6 /* StudentUnionUITests.m */; };
@@ -25,6 +24,8 @@
 		4C995A281CB6388000B832D7 /* ZCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C995A271CB6388000B832D7 /* ZCLoginViewController.m */; };
 		4CB6B9F61CB4D7BF00DB7447 /* ZCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6B9F51CB4D7BF00DB7447 /* ZCTestViewController.m */; };
 		4CE620C21CB7F78500AF10B5 /* ZCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE620C11CB7F78500AF10B5 /* ZCTabBarController.m */; };
+		4CF45D681CC7AEEC00D87064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF45D671CC7AEEC00D87064 /* Assets.xcassets */; };
+		4CF45D6B1CC7B78400D87064 /* ZCTeamTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF45D6A1CC7B78400D87064 /* ZCTeamTableViewController.m */; };
 		4CFC6FD01CB7914E00B0F5CC /* ZCRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC6FCF1CB7914E00B0F5CC /* ZCRegisterViewController.m */; };
 		4CFC6FDB1CB79EC800B0F5CC /* ZCStudentUnionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC6FDA1CB79EC800B0F5CC /* ZCStudentUnionTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -56,7 +57,6 @@
 		4C4D613F1CB368F0000E64F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C4D61401CB368F0000E64F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4C4D61461CB368F0000E64F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4C4D61481CB368F0000E64F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C4D614B1CB368F0000E64F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C4D614D1CB368F0000E64F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C4D61521CB368F1000E64F6 /* StudentUnionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentUnionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +82,9 @@
 		4CB6B9F51CB4D7BF00DB7447 /* ZCTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTestViewController.m; sourceTree = "<group>"; };
 		4CE620C01CB7F78500AF10B5 /* ZCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTabBarController.h; sourceTree = "<group>"; };
 		4CE620C11CB7F78500AF10B5 /* ZCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTabBarController.m; sourceTree = "<group>"; };
+		4CF45D671CC7AEEC00D87064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CF45D691CC7B78400D87064 /* ZCTeamTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTeamTableViewController.h; sourceTree = "<group>"; };
+		4CF45D6A1CC7B78400D87064 /* ZCTeamTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTeamTableViewController.m; sourceTree = "<group>"; };
 		4CFC6FCE1CB7914E00B0F5CC /* ZCRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCRegisterViewController.h; sourceTree = "<group>"; };
 		4CFC6FCF1CB7914E00B0F5CC /* ZCRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCRegisterViewController.m; sourceTree = "<group>"; };
 		4CFC6FD41CB7946A00B0F5CC /* DefineHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineHeaders.h; sourceTree = "<group>"; };
@@ -168,7 +171,7 @@
 				4CFC6FD51CB79E7600B0F5CC /* Test */,
 				4CFC6FD21CB793EC00B0F5CC /* PrivateCategoryAndHeaders */,
 				4C4D61451CB368F0000E64F6 /* Main.storyboard */,
-				4C4D61481CB368F0000E64F6 /* Assets.xcassets */,
+				4CF45D671CC7AEEC00D87064 /* Assets.xcassets */,
 				4C4D614A1CB368F0000E64F6 /* LaunchScreen.storyboard */,
 				4C4D614D1CB368F0000E64F6 /* Info.plist */,
 				4C4D613C1CB368F0000E64F6 /* Supporting Files */,
@@ -210,6 +213,8 @@
 				4CFC6FDA1CB79EC800B0F5CC /* ZCStudentUnionTableViewController.m */,
 				4C5911401CBA25BA00AEF3DF /* ZCNewsDetailTableViewController.h */,
 				4C5911411CBA25BA00AEF3DF /* ZCNewsDetailTableViewController.m */,
+				4CF45D691CC7B78400D87064 /* ZCTeamTableViewController.h */,
+				4CF45D6A1CC7B78400D87064 /* ZCTeamTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 				TargetAttributes = {
 					4C4D61381CB368F0000E64F6 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6PRCTVW4F9;
 					};
 					4C4D61511CB368F1000E64F6 = {
 						CreatedOnToolsVersion = 7.3;
@@ -419,7 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4D614C1CB368F0000E64F6 /* LaunchScreen.storyboard in Resources */,
-				4C4D61491CB368F0000E64F6 /* Assets.xcassets in Resources */,
+				4CF45D681CC7AEEC00D87064 /* Assets.xcassets in Resources */,
 				4C4D61471CB368F0000E64F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +502,7 @@
 				4C0884B51CB952CB000F11C2 /* MBProgressHUD+ZCShow.m in Sources */,
 				4C0884B11CB90329000F11C2 /* ZCWorkNewsCell.m in Sources */,
 				4C59113F1CBA160200AEF3DF /* ZCWorkNewsModel.m in Sources */,
+				4CF45D6B1CC7B78400D87064 /* ZCTeamTableViewController.m in Sources */,
 				4CFC6FDB1CB79EC800B0F5CC /* ZCStudentUnionTableViewController.m in Sources */,
 				4CB6B9F61CB4D7BF00DB7447 /* ZCTestViewController.m in Sources */,
 				4C4D61411CB368F0000E64F6 /* AppDelegate.m in Sources */,
@@ -650,6 +657,7 @@
 			baseConfigurationReference = B487309ACDE26152140703B2 /* Pods-StudentUnion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$SRCROOT/$PRODUCT_NAME/StudentUnion-iOS.pch";
 				INFOPLIST_FILE = StudentUnion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -664,6 +672,7 @@
 			baseConfigurationReference = 5EFEE2F79BBCEC8873FE9E27 /* Pods-StudentUnion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$SRCROOT/$PRODUCT_NAME/StudentUnion-iOS.pch";
 				INFOPLIST_FILE = StudentUnion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

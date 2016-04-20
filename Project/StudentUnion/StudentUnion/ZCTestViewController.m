@@ -68,15 +68,7 @@ static NSString *wildDogUrl = @"https://student-union.wilddogio.com/zcill/";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    /*
-    [AVUser logInWithUsernameInBackground:@"zcill" password:@"12345" block:^(AVUser *user, NSError *error) {
-        if (!error) {
-            NSLog(@"login succeeded");
-        } else {
-            NSLog(@"error: %@", error.description);
-        }
-    }];
-     */
+    
 }
 
 - (void)userLoginButtonClick {
