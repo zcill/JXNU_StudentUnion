@@ -24,6 +24,7 @@
 		4C995A281CB6388000B832D7 /* ZCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C995A271CB6388000B832D7 /* ZCLoginViewController.m */; };
 		4CB6B9F61CB4D7BF00DB7447 /* ZCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6B9F51CB4D7BF00DB7447 /* ZCTestViewController.m */; };
 		4CC908E21CCB8A7000FE9079 /* ZCCommitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC908E11CCB8A7000FE9079 /* ZCCommitViewController.m */; };
+		4CC908E41CCB98B600FE9079 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC908E31CCB98B600FE9079 /* AVFoundation.framework */; };
 		4CE620C21CB7F78500AF10B5 /* ZCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE620C11CB7F78500AF10B5 /* ZCTabBarController.m */; };
 		4CF45D681CC7AEEC00D87064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF45D671CC7AEEC00D87064 /* Assets.xcassets */; };
 		4CF45D6B1CC7B78400D87064 /* ZCTeamTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF45D6A1CC7B78400D87064 /* ZCTeamTableViewController.m */; };
@@ -83,6 +84,7 @@
 		4CB6B9F51CB4D7BF00DB7447 /* ZCTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTestViewController.m; sourceTree = "<group>"; };
 		4CC908E01CCB8A7000FE9079 /* ZCCommitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCommitViewController.h; sourceTree = "<group>"; };
 		4CC908E11CCB8A7000FE9079 /* ZCCommitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCommitViewController.m; sourceTree = "<group>"; };
+		4CC908E31CCB98B600FE9079 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4CE620C01CB7F78500AF10B5 /* ZCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTabBarController.h; sourceTree = "<group>"; };
 		4CE620C11CB7F78500AF10B5 /* ZCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTabBarController.m; sourceTree = "<group>"; };
 		4CF45D671CC7AEEC00D87064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC908E41CCB98B600FE9079 /* AVFoundation.framework in Frameworks */,
 				486C4593E777E9886C773BE1 /* libPods-StudentUnion.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +319,7 @@
 		D1CB0FFE803FD29566B7D9DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CC908E31CCB98B600FE9079 /* AVFoundation.framework */,
 				5820A88A6200831E034425DF /* libPods-StudentUnion.a */,
 			);
 			name = Frameworks;

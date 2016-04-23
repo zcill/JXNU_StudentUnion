@@ -609,7 +609,7 @@
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
-                                                <segue destination="6kc-Mh-XfI" kind="show" id="z8K-7X-Yfe"/>
+                                                <segue destination="6kc-Mh-XfI" kind="show" id="71k-Kf-y5Y"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emG-vR-1Rr">
@@ -655,7 +655,7 @@
         <!--Commit View Controller-->
         <scene sceneID="zPe-WH-GzJ">
             <objects>
-                <viewController id="6kc-Mh-XfI" customClass="ZCCommitViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ZCCommitViewController" id="6kc-Mh-XfI" customClass="ZCCommitViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZBS-Cv-O5r"/>
                         <viewControllerLayoutGuide type="bottom" id="vty-8I-JgU"/>
@@ -718,7 +718,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="志愿" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VAS-DY-dzd">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VAS-DY-dzd">
                                 <rect key="frame" x="16" y="162" width="189" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -837,10 +837,19 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="classTextField" destination="Ixn-tb-QlW" id="QhW-FR-DKP"/>
+                        <outlet property="followSwitch" destination="khS-fr-rgj" id="d1a-Dp-moj"/>
+                        <outlet property="ideaTextView" destination="e8X-Y8-oEL" id="Ghr-wP-99w"/>
+                        <outlet property="introTextView" destination="Jcb-L1-Vuw" id="01S-uK-sKZ"/>
+                        <outlet property="nameTextField" destination="d05-wq-zYa" id="l48-kq-pDk"/>
+                        <outlet property="photoImageView" destination="8dh-G1-ITX" id="f3D-r0-b9B"/>
+                        <outlet property="telNumberTextField" destination="VAS-DY-dzd" id="0WU-Ex-5u4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NuC-kT-MTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-521.5" y="4423.5"/>
+            <point key="canvasLocation" x="-521.5" y="4390.5"/>
         </scene>
         <!--教务通知-->
         <scene sceneID="zcv-YV-ThJ">
@@ -1279,8 +1288,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="编辑个人资料" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2K-ty-nwd">
-                                                    <rect key="frame" x="77" y="13" width="90" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的简历" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2K-ty-nwd">
+                                                    <rect key="frame" x="77" y="13" width="60" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="KUh-BB-BXg"/>
                                                     </constraints>
