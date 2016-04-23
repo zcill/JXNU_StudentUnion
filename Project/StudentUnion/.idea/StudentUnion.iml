@@ -6,23 +6,21 @@
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCWorkNewsCell.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCNewsDetailTableViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCWorkNewsModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/MBProgressHUD+ZCShow.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/StudentUnion-iOS.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/AppDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCWorkNewsCell.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/StudentUnion-iOS.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCNewsDetailTableViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCTabBarController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/MBProgressHUD+ZCShow.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCWorkNewsModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCLoginViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCStudentUnionTableViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCLoginViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/AppDelegate.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCLoginViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCNewsDetailTableViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCWorkNewsModel.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCNewsDetailCell.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCRegisterViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCTabBarController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/UIImage+ZCOriginal.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCRegisterViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/UIImage+ZCOriginal.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/DefineHeaders.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCTeamTableViewController.m" isTestSource="false" />
@@ -32,11 +30,13 @@
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCTeamTableViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCToolBar.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCTestViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCToolBar.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCTestViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/UIImage+ZCOriginal.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCStudentUnionTableViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/ZCRegisterViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StudentUnion/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StudentUnion/MBProgressHUD+ZCShow.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/AFNetworking/AFNetworking/AFURLSessionManager.m" isTestSource="false" />

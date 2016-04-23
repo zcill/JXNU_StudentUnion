@@ -18,15 +18,6 @@
 
 @implementation ZCStudentUnionTableViewController
 
-- (IBAction)headerViewButtonClicked:(UIButton *)sender {
-
-    ZCTeamTableViewController *teamVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ZCTeamTableViewController"];
-    teamVC.teamName = sender.currentTitle;
-    [self.navigationController pushViewController:teamVC animated:YES];
-
-    DLog(@"%@", sender.currentTitle);
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -72,11 +63,21 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    ZCNewsDetailTableViewController *vc = (ZCNewsDetailTableViewController *)[segue destinationViewController];
-    AVObject *newsObject = _dataSource[indexPath.row];
-    vc.objectId = newsObject.objectId;
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender {
+    
+    if ([segue.identifier isEqualToString:@"pushToTeam"]) {
+        
+        ZCTeamTableViewController *team = (ZCTeamTableViewController *)[segue destinationViewController];
+        team.teamName = sender.currentTitle;
+        
+    } else if ([segue.identifier isEqualToString:@"pushToNews"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        ZCNewsDetailTableViewController *vc = (ZCNewsDetailTableViewController *)[segue destinationViewController];
+        AVObject *newsObject = _dataSource[indexPath.row];
+        vc.objectId = newsObject.objectId;
+    }
+    
 }
 
 #pragma mark - Table view data source
