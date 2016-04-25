@@ -73,6 +73,7 @@
         } else {
             [hud hide:YES];
             [MBProgressHUD showErrorHudAddTo:self.view animated:YES text:@"上传失败"];
+            NSLog(@"error: %@", error.description);
         }
     }];
 
@@ -94,6 +95,7 @@
     [resume setObject:@(self.followSwitch.on) forKey:@"followSwitch"];
     [resume setObject:[AVUser currentUser] forKey:@"user"];
     [resume setObject:self.ideaTextView.text forKey:@"ideas"];
+    [resume setObject:self.commitTeam forKey:@"commitTeam"];
     
 }
 

@@ -21,6 +21,10 @@
 		4C5911451CBA26EF00AEF3DF /* ZCNewsDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5911441CBA26EF00AEF3DF /* ZCNewsDetailCell.m */; };
 		4C5911491CBA502B00AEF3DF /* ZCToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5911481CBA502B00AEF3DF /* ZCToolBar.m */; };
 		4C59114C1CBA558700AEF3DF /* UIImage+ZCOriginal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C59114B1CBA558700AEF3DF /* UIImage+ZCOriginal.m */; };
+		4C9932A81CCE0AB2009182BF /* ZCTeamDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9932A71CCE0AB2009182BF /* ZCTeamDetailModel.m */; };
+		4C9932AB1CCE153D009182BF /* ZCTeamNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9932AA1CCE153D009182BF /* ZCTeamNameCell.m */; };
+		4C9932AE1CCE1553009182BF /* ZCTeamIntroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9932AD1CCE1553009182BF /* ZCTeamIntroCell.m */; };
+		4C9932B11CCE15F8009182BF /* ZCTeamSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9932B01CCE15F8009182BF /* ZCTeamSelectCell.m */; };
 		4C995A281CB6388000B832D7 /* ZCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C995A271CB6388000B832D7 /* ZCLoginViewController.m */; };
 		4CB6B9F61CB4D7BF00DB7447 /* ZCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6B9F51CB4D7BF00DB7447 /* ZCTestViewController.m */; };
 		4CC908E21CCB8A7000FE9079 /* ZCCommitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC908E11CCB8A7000FE9079 /* ZCCommitViewController.m */; };
@@ -78,6 +82,14 @@
 		4C5911481CBA502B00AEF3DF /* ZCToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCToolBar.m; sourceTree = "<group>"; };
 		4C59114A1CBA558700AEF3DF /* UIImage+ZCOriginal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZCOriginal.h"; sourceTree = "<group>"; };
 		4C59114B1CBA558700AEF3DF /* UIImage+ZCOriginal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZCOriginal.m"; sourceTree = "<group>"; };
+		4C9932A61CCE0AB2009182BF /* ZCTeamDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTeamDetailModel.h; sourceTree = "<group>"; };
+		4C9932A71CCE0AB2009182BF /* ZCTeamDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTeamDetailModel.m; sourceTree = "<group>"; };
+		4C9932A91CCE153D009182BF /* ZCTeamNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTeamNameCell.h; sourceTree = "<group>"; };
+		4C9932AA1CCE153D009182BF /* ZCTeamNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTeamNameCell.m; sourceTree = "<group>"; };
+		4C9932AC1CCE1553009182BF /* ZCTeamIntroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTeamIntroCell.h; sourceTree = "<group>"; };
+		4C9932AD1CCE1553009182BF /* ZCTeamIntroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTeamIntroCell.m; sourceTree = "<group>"; };
+		4C9932AF1CCE15F8009182BF /* ZCTeamSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTeamSelectCell.h; sourceTree = "<group>"; };
+		4C9932B01CCE15F8009182BF /* ZCTeamSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTeamSelectCell.m; sourceTree = "<group>"; };
 		4C995A261CB6388000B832D7 /* ZCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCLoginViewController.h; sourceTree = "<group>"; };
 		4C995A271CB6388000B832D7 /* ZCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCLoginViewController.m; sourceTree = "<group>"; };
 		4CB6B9F41CB4D7BF00DB7447 /* ZCTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTestViewController.h; sourceTree = "<group>"; };
@@ -234,6 +246,12 @@
 				4C0884B01CB90329000F11C2 /* ZCWorkNewsCell.m */,
 				4C5911431CBA26EF00AEF3DF /* ZCNewsDetailCell.h */,
 				4C5911441CBA26EF00AEF3DF /* ZCNewsDetailCell.m */,
+				4C9932A91CCE153D009182BF /* ZCTeamNameCell.h */,
+				4C9932AA1CCE153D009182BF /* ZCTeamNameCell.m */,
+				4C9932AC1CCE1553009182BF /* ZCTeamIntroCell.h */,
+				4C9932AD1CCE1553009182BF /* ZCTeamIntroCell.m */,
+				4C9932AF1CCE15F8009182BF /* ZCTeamSelectCell.h */,
+				4C9932B01CCE15F8009182BF /* ZCTeamSelectCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -243,6 +261,8 @@
 			children = (
 				4C59113D1CBA160200AEF3DF /* ZCWorkNewsModel.h */,
 				4C59113E1CBA160200AEF3DF /* ZCWorkNewsModel.m */,
+				4C9932A61CCE0AB2009182BF /* ZCTeamDetailModel.h */,
+				4C9932A71CCE0AB2009182BF /* ZCTeamDetailModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -510,18 +530,22 @@
 			files = (
 				4C0884B51CB952CB000F11C2 /* MBProgressHUD+ZCShow.m in Sources */,
 				4C0884B11CB90329000F11C2 /* ZCWorkNewsCell.m in Sources */,
+				4C9932AB1CCE153D009182BF /* ZCTeamNameCell.m in Sources */,
 				4C59113F1CBA160200AEF3DF /* ZCWorkNewsModel.m in Sources */,
 				4CF45D6B1CC7B78400D87064 /* ZCTeamTableViewController.m in Sources */,
 				4CFC6FDB1CB79EC800B0F5CC /* ZCStudentUnionTableViewController.m in Sources */,
 				4CB6B9F61CB4D7BF00DB7447 /* ZCTestViewController.m in Sources */,
+				4C9932A81CCE0AB2009182BF /* ZCTeamDetailModel.m in Sources */,
 				4C4D61411CB368F0000E64F6 /* AppDelegate.m in Sources */,
 				4C5911451CBA26EF00AEF3DF /* ZCNewsDetailCell.m in Sources */,
+				4C9932AE1CCE1553009182BF /* ZCTeamIntroCell.m in Sources */,
 				4CC908E21CCB8A7000FE9079 /* ZCCommitViewController.m in Sources */,
 				4C4D613E1CB368F0000E64F6 /* main.m in Sources */,
 				4C5911491CBA502B00AEF3DF /* ZCToolBar.m in Sources */,
 				4C59114C1CBA558700AEF3DF /* UIImage+ZCOriginal.m in Sources */,
 				4C995A281CB6388000B832D7 /* ZCLoginViewController.m in Sources */,
 				4CE620C21CB7F78500AF10B5 /* ZCTabBarController.m in Sources */,
+				4C9932B11CCE15F8009182BF /* ZCTeamSelectCell.m in Sources */,
 				4CFC6FD01CB7914E00B0F5CC /* ZCRegisterViewController.m in Sources */,
 				4C5911421CBA25BA00AEF3DF /* ZCNewsDetailTableViewController.m in Sources */,
 			);

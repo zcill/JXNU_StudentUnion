@@ -11,9 +11,10 @@
 #import "ZCWorkNewsModel.h"
 
 @interface ZCNewsDetailTableViewController ()
-@property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
+
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, strong) ZCWorkNewsModel *tmpModel;
+
 @end
 
 @implementation ZCNewsDetailTableViewController

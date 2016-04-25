@@ -231,6 +231,9 @@
                                     <state key="normal" title="办公室" image="banner_bangongshi">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="d7X-AU-aEa" kind="show" id="0vN-KH-iXZ"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIT-VJ-2o0" userLabel="zuzhibu">
                                     <rect key="frame" x="75" y="0.0" width="75" height="80"/>
@@ -240,6 +243,9 @@
                                     <state key="normal" title="组织部" image="banner_zuzhibu">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="d7X-AU-aEa" kind="show" id="SBb-nL-mha"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gD-0g-lei" userLabel="wenyibu">
                                     <rect key="frame" x="150" y="0.0" width="75" height="80"/>
@@ -249,15 +255,21 @@
                                     <state key="normal" title="文艺部" image="banner_wenyibu">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="d7X-AU-aEa" kind="show" id="KTp-mq-sJx"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMS-nW-sJy" userLabel="tiyubu">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMS-nW-sJy" userLabel="xuanchuanbu">
                                     <rect key="frame" x="225" y="0.0" width="75" height="80"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <inset key="titleEdgeInsets" minX="-33" minY="40" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="12" minY="-15" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" title="体育部" image="banner_tiyubu">
+                                    <state key="normal" title="宣传部" image="banner_tiyubu">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="d7X-AU-aEa" kind="show" id="wwU-pQ-4RX"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-ul-gYv" userLabel="xuexibu">
                                     <rect key="frame" x="75" y="80" width="75" height="80"/>
@@ -267,17 +279,11 @@
                                     <state key="normal" title="学习部" image="banner_xuexibu">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="d7X-AU-aEa" kind="show" id="bKb-qR-v0E"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDT-6g-UEx" userLabel="nvshengbu">
-                                    <rect key="frame" x="150" y="80" width="75" height="80"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                    <inset key="titleEdgeInsets" minX="-33" minY="40" maxX="0.0" maxY="0.0"/>
-                                    <inset key="imageEdgeInsets" minX="12" minY="-15" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" title="女生部" image="banner_nvshengbu">
-                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </state>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kge-Uh-kBf" userLabel="tiyubu copy">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kge-Uh-kBf" userLabel="tiyubu">
                                     <rect key="frame" x="300" y="0.0" width="75" height="80"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <inset key="titleEdgeInsets" minX="-33" minY="40" maxX="0.0" maxY="0.0"/>
@@ -285,17 +291,20 @@
                                     <state key="normal" title="体育部" image="banner_tiyubu">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="d7X-AU-aEa" kind="show" id="KsG-vD-EWk"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svV-6F-yo4" userLabel="xinxie copy">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svV-6F-yo4" userLabel="yuanzhixie">
                                     <rect key="frame" x="300" y="80" width="75" height="80"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <inset key="titleEdgeInsets" minX="-33" minY="40" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="12" minY="-15" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" title="心协会" image="banner_xinxie">
+                                    <state key="normal" title="院职协" image="banner_xinxie">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
                                     <connections>
-                                        <segue destination="d7X-AU-aEa" kind="show" identifier="pushToTeam" id="vBU-Jz-iJi"/>
+                                        <segue destination="d7X-AU-aEa" kind="show" identifier="" id="vBU-Jz-iJi"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEQ-2o-XNR" userLabel="sutuobu">
@@ -306,15 +315,33 @@
                                     <state key="normal" title="素拓部" image="banner_sutuobu">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="d7X-AU-aEa" kind="show" id="rpC-om-C2L"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m91-Yd-1kB" userLabel="xinxie">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m91-Yd-1kB" userLabel="yuanxinxie">
                                     <rect key="frame" x="225" y="80" width="75" height="80"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <inset key="titleEdgeInsets" minX="-33" minY="40" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="12" minY="-15" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" title="心协会" image="banner_xinxie">
+                                    <state key="normal" title="院心协" image="banner_xinxie">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="d7X-AU-aEa" kind="show" id="msG-pU-LfK"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDT-6g-UEx" userLabel="nvshengbu">
+                                    <rect key="frame" x="150" y="80" width="75" height="80"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <inset key="titleEdgeInsets" minX="-33" minY="40" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="12" minY="-15" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="女生部" image="banner_nvshengbu">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <segue destination="d7X-AU-aEa" kind="show" id="P3K-mi-uim"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -543,27 +570,30 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="teamNameCell" id="bpw-AY-ihr">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ZCTeamNameCell" id="OFt-gZ-dij" customClass="ZCTeamNameCell">
                                 <rect key="frame" x="0.0" y="292" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bpw-AY-ihr" id="SoL-57-mVS">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OFt-gZ-dij" id="pcZ-0Y-gpZ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="办公室" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9q-Sx-eCc">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="办公室" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZ3-oc-c1z">
                                             <rect key="frame" x="162" y="11" width="51" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Q9q-Sx-eCc" firstAttribute="centerX" secondItem="SoL-57-mVS" secondAttribute="centerX" id="19Q-Zu-HI4"/>
-                                        <constraint firstItem="Q9q-Sx-eCc" firstAttribute="centerY" secondItem="SoL-57-mVS" secondAttribute="centerY" id="FYv-14-NUw"/>
+                                        <constraint firstItem="fZ3-oc-c1z" firstAttribute="centerY" secondItem="pcZ-0Y-gpZ" secondAttribute="centerY" id="c6f-mg-NI1"/>
+                                        <constraint firstItem="fZ3-oc-c1z" firstAttribute="centerX" secondItem="pcZ-0Y-gpZ" secondAttribute="centerX" id="hIl-Bx-yKp"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="teamNameLabel" destination="fZ3-oc-c1z" id="xyc-sp-Xex"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="teamDescCell" rowHeight="129" id="dSz-i1-mVr">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ZCTeamIntroCell" rowHeight="129" id="dSz-i1-mVr" customClass="ZCTeamIntroCell">
                                 <rect key="frame" x="0.0" y="336" width="375" height="129"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dSz-i1-mVr" id="acz-qX-hlW">
@@ -584,8 +614,11 @@
                                         <constraint firstItem="RHj-Hr-t9F" firstAttribute="leading" secondItem="acz-qX-hlW" secondAttribute="leadingMargin" constant="24" id="jH6-MR-f7v"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="teamIntroLabel" destination="RHj-Hr-t9F" id="3K5-yO-qJG"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="selecteCell" rowHeight="127" id="Owu-q8-qDb">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ZCTeamSelectCell" rowHeight="127" id="Owu-q8-qDb" customClass="ZCTeamSelectCell">
                                 <rect key="frame" x="0.0" y="465" width="375" height="127"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Owu-q8-qDb" id="E9n-7G-Aic">
@@ -1629,4 +1662,7 @@
         <image name="xueshenghui" width="22" height="25"/>
         <image name="xueshenghui_selected" width="22" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="msG-pU-LfK"/>
+    </inferredMetricsTieBreakers>
 </document>

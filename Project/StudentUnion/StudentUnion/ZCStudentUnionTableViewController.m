@@ -65,19 +65,18 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender {
     
-    if ([segue.identifier isEqualToString:@"pushToTeam"]) {
-        
-        ZCTeamTableViewController *team = (ZCTeamTableViewController *)[segue destinationViewController];
-        team.teamName = sender.currentTitle;
-        
-    } else if ([segue.identifier isEqualToString:@"pushToNews"]) {
+    if ([segue.identifier isEqualToString:@"pushToNews"]) {
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         ZCNewsDetailTableViewController *vc = (ZCNewsDetailTableViewController *)[segue destinationViewController];
         AVObject *newsObject = _dataSource[indexPath.row];
         vc.objectId = newsObject.objectId;
+    } else {
+        
+        ZCTeamTableViewController *team = (ZCTeamTableViewController *)[segue destinationViewController];
+        team.teamName = sender.currentTitle;
+        
     }
-    
 }
 
 #pragma mark - Table view data source

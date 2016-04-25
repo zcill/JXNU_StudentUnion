@@ -7,8 +7,15 @@
 //
 
 #import "ZCTeamTableViewController.h"
+#import "ZCCommitViewController.h"
+#import "ZCTeamDetailModel.h"
+#import "ZCTeamNameCell.h"
+#import "ZCTeamIntroCell.h"
+#import "ZCTeamSelectCell.h"
 
 @interface ZCTeamTableViewController ()
+
+@property (nonatomic, strong) ZCTeamDetailModel *model;
 
 @end
 
@@ -23,7 +30,7 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     
     self.tableView.tableFooterView = [[UIView alloc] init];
-    
+    [self fetchNewData];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -42,6 +49,32 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ZCCommitViewController *commit = [segue destinationViewController];
+    commit.commitTeam = self.teamName;
+}
+
+#pragma mark - Data
+- (void)fetchNewData {
+    
+    AVQuery *query = [AVQuery queryWithClassName:@"TeamDetail"];
+    [query whereKey:@"teamName" equalTo:self.teamName];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+
+        if (!error) {
+            for (AVObject *object in objects) {
+                ZCTeamDetailModel *model = [ZCTeamDetailModel modelWithAVObject:object];
+                self.model = model;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.tableView reloadData];
+                });
+            }
+        }
+
+    }];
+    
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -49,17 +82,20 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *cellIdentifier = @"";
-    if (indexPath.row == 0) {
-        cellIdentifier = @"teamNameCell";
-    } else if (indexPath.row == 1) {
-        cellIdentifier = @"teamDescCell";
-    } else if (indexPath.row == 2) {
-        cellIdentifier = @"selecteCell";
-    }
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    return cell;
+    if (indexPath.row == 0) {
+        ZCTeamNameCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZCTeamNameCell"];
+        cell.model = _model;
+        return cell;
+    } else if (indexPath.row == 1) {
+        ZCTeamIntroCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZCTeamIntroCell"];
+        cell.model = _model;
+        return cell;
+    } else if (indexPath.row == 2) {
+        ZCTeamSelectCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZCTeamSelectCell"];
+        return cell;
+    }
+    return nil;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {

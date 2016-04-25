@@ -10,4 +10,6 @@
 
 @interface ZCCommitViewController : UIViewController
 
+@property (nonatomic, copy) NSString *commitTeam;
+
 @end
