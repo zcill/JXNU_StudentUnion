@@ -264,7 +264,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <inset key="titleEdgeInsets" minX="-33" minY="40" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="12" minY="-15" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" title="宣传部" image="banner_tiyubu">
+                                    <state key="normal" title="宣传部" image="banner_xuanchuanbu">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
                                     <connections>
@@ -300,7 +300,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <inset key="titleEdgeInsets" minX="-33" minY="40" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="12" minY="-15" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" title="院职协" image="banner_xinxie">
+                                    <state key="normal" title="院职协" image="banner_zhixie">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
                                     <connections>
@@ -1639,7 +1639,9 @@
         <image name="banner_tiyubu" width="33" height="33"/>
         <image name="banner_wenyibu" width="33" height="33"/>
         <image name="banner_xinxie" width="33" height="33"/>
+        <image name="banner_xuanchuanbu" width="33" height="33"/>
         <image name="banner_xuexibu" width="33" height="33"/>
+        <image name="banner_zhixie" width="33" height="33"/>
         <image name="banner_zuzhibu" width="33" height="33"/>
         <image name="barItem_message" width="23" height="19"/>
         <image name="barItem_scan" width="19" height="19"/>
