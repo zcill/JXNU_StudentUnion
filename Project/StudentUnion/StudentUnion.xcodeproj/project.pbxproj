@@ -29,6 +29,7 @@
 		4CB6B9F61CB4D7BF00DB7447 /* ZCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6B9F51CB4D7BF00DB7447 /* ZCTestViewController.m */; };
 		4CC908E21CCB8A7000FE9079 /* ZCCommitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC908E11CCB8A7000FE9079 /* ZCCommitViewController.m */; };
 		4CC908E41CCB98B600FE9079 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC908E31CCB98B600FE9079 /* AVFoundation.framework */; };
+		4CD534301CCFBB630090FB2A /* ZCSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5342F1CCFBB630090FB2A /* ZCSettingTableViewController.m */; };
 		4CE620C21CB7F78500AF10B5 /* ZCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE620C11CB7F78500AF10B5 /* ZCTabBarController.m */; };
 		4CF45D681CC7AEEC00D87064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF45D671CC7AEEC00D87064 /* Assets.xcassets */; };
 		4CF45D6B1CC7B78400D87064 /* ZCTeamTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF45D6A1CC7B78400D87064 /* ZCTeamTableViewController.m */; };
@@ -97,6 +98,8 @@
 		4CC908E01CCB8A7000FE9079 /* ZCCommitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCommitViewController.h; sourceTree = "<group>"; };
 		4CC908E11CCB8A7000FE9079 /* ZCCommitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCommitViewController.m; sourceTree = "<group>"; };
 		4CC908E31CCB98B600FE9079 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4CD5342E1CCFBB630090FB2A /* ZCSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSettingTableViewController.h; sourceTree = "<group>"; };
+		4CD5342F1CCFBB630090FB2A /* ZCSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSettingTableViewController.m; sourceTree = "<group>"; };
 		4CE620C01CB7F78500AF10B5 /* ZCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTabBarController.h; sourceTree = "<group>"; };
 		4CE620C11CB7F78500AF10B5 /* ZCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTabBarController.m; sourceTree = "<group>"; };
 		4CF45D671CC7AEEC00D87064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -276,6 +279,15 @@
 			name = private;
 			sourceTree = "<group>";
 		};
+		4CD5342D1CCFBB300090FB2A /* Setting(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				4CD5342E1CCFBB630090FB2A /* ZCSettingTableViewController.h */,
+				4CD5342F1CCFBB630090FB2A /* ZCSettingTableViewController.m */,
+			);
+			name = "Setting(我的)";
+			sourceTree = "<group>";
+		};
 		4CFC6FD11CB7915300B0F5CC /* LoginRegister */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +334,7 @@
 				4C0884B21CB952B6000F11C2 /* Category */,
 				4CFC6FD11CB7915300B0F5CC /* LoginRegister */,
 				4CFC6FD81CB79E9D00B0F5CC /* StudentUnion(学生会) */,
+				4CD5342D1CCFBB300090FB2A /* Setting(我的) */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -530,6 +543,7 @@
 			files = (
 				4C0884B51CB952CB000F11C2 /* MBProgressHUD+ZCShow.m in Sources */,
 				4C0884B11CB90329000F11C2 /* ZCWorkNewsCell.m in Sources */,
+				4CD534301CCFBB630090FB2A /* ZCSettingTableViewController.m in Sources */,
 				4C9932AB1CCE153D009182BF /* ZCTeamNameCell.m in Sources */,
 				4C59113F1CBA160200AEF3DF /* ZCWorkNewsModel.m in Sources */,
 				4CF45D6B1CC7B78400D87064 /* ZCTeamTableViewController.m in Sources */,

@@ -22,6 +22,7 @@
 #import <Realm/Realm.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #pragma mark - category
 #import "MBProgressHUD+ZCShow.h"

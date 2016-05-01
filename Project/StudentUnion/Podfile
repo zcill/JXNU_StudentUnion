@@ -7,12 +7,13 @@ target 'StudentUnion' do
 
 pod 'Realm'
 pod 'AFNetworking'
-pod 'ReactiveCocoa', '~> 2.5'
 pod 'AVOSCloud'
 pod 'MBProgressHUD'
 pod 'hpple'
 pod 'Wilddog'
 pod 'IQKeyboardManager'
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'SDWebImage'
 
 end
 

@@ -28,6 +28,9 @@ PODS:
   - Realm (0.98.2):
     - Realm/Headers (= 0.98.2)
   - Realm/Headers (0.98.2)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
   - Wilddog (0.9.6)
 
 DEPENDENCIES:
@@ -38,6 +41,7 @@ DEPENDENCIES:
   - MBProgressHUD
   - ReactiveCocoa (~> 2.5)
   - Realm
+  - SDWebImage
   - Wilddog
 
 SPEC CHECKSUMS:
@@ -48,6 +52,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   Realm: 88a147fe04b8f07191a676b15c779b2b448991de
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   Wilddog: 3030fbda193acbea66b271a6aea271a35db36165
 
 COCOAPODS: 0.39.0
