@@ -1197,97 +1197,6 @@
             </objects>
             <point key="canvasLocation" x="-704.5" y="388.5"/>
         </scene>
-        <!--Test View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ZCTestViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TVL-dY-U7K">
-                                <rect key="frame" x="133" y="87" width="176" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbb-in-xqO">
-                                <rect key="frame" x="63" y="96" width="51" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Asj-eu-Fqe">
-                                <rect key="frame" x="133" y="133" width="176" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xj2-yu-hXU">
-                                <rect key="frame" x="63" y="137" width="51" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0i9-a6-R5q">
-                                <rect key="frame" x="243" y="136" width="61" height="23"/>
-                                <color key="backgroundColor" red="0.25098039215686274" green="0.67843137254901964" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="发送验证码">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="sendSmsButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wJW-FM-EVt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyn-Xn-BK8">
-                                <rect key="frame" x="164" y="195" width="60" height="30"/>
-                                <state key="normal" title="确认注册"/>
-                                <connections>
-                                    <action selector="registerButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zMj-Ne-9iT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIF-x3-8Fb">
-                                <rect key="frame" x="132" y="344" width="103" height="30"/>
-                                <state key="normal" title="Wild Dog Write"/>
-                                <connections>
-                                    <action selector="wildDogWrite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ZK-ex-F51"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ule-G9-zAO">
-                                <rect key="frame" x="132" y="306" width="102" height="30"/>
-                                <state key="normal" title="Wild Dog Read"/>
-                                <connections>
-                                    <action selector="wildDogRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CIk-6t-54m"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ule-G9-zAO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="286" id="85D-Ot-IGn"/>
-                            <constraint firstItem="yIF-x3-8Fb" firstAttribute="leading" secondItem="ule-G9-zAO" secondAttribute="leading" id="O89-C3-W3Q"/>
-                            <constraint firstItem="ule-G9-zAO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="116" id="OGa-Bp-V5v"/>
-                            <constraint firstItem="yIF-x3-8Fb" firstAttribute="top" secondItem="ule-G9-zAO" secondAttribute="bottom" constant="8" id="hUv-JR-yfj"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="phoneNumberTextField" destination="TVL-dY-U7K" id="RrL-cb-Xhu"/>
-                        <outlet property="smsNumberTextField" destination="Asj-eu-Fqe" id="efl-VF-8Th"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="400.5" y="388.5"/>
-        </scene>
         <!--学生会-->
         <scene sceneID="7F6-G8-2FR">
             <objects>
@@ -1373,19 +1282,6 @@
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userBg" translatesAutoresizingMaskIntoConstraints="NO" id="VmH-gU-VnP">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultHead" translatesAutoresizingMaskIntoConstraints="NO" id="vQp-ff-lNa">
-                                    <rect key="frame" x="152" y="16" width="70" height="70"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="70" id="Ti7-7A-Aw8"/>
-                                        <constraint firstAttribute="width" constant="70" id="Z9o-NQ-zlV"/>
-                                    </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                            <integer key="value" value="35"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朱立焜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7z9-wi-ha9">
                                     <rect key="frame" x="162" y="94" width="51" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1410,6 +1306,19 @@
                                         <constraint firstAttribute="height" constant="18" id="Vk1-r8-YSQ"/>
                                         <constraint firstAttribute="width" constant="18" id="l8Z-XJ-hHH"/>
                                     </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultHead" translatesAutoresizingMaskIntoConstraints="NO" id="vQp-ff-lNa">
+                                    <rect key="frame" x="152" y="16" width="70" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="Ti7-7A-Aw8"/>
+                                        <constraint firstAttribute="width" constant="70" id="Z9o-NQ-zlV"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="35"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

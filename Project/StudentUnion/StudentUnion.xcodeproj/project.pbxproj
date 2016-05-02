@@ -27,7 +27,6 @@
 		4C9932AE1CCE1553009182BF /* ZCTeamIntroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9932AD1CCE1553009182BF /* ZCTeamIntroCell.m */; };
 		4C9932B11CCE15F8009182BF /* ZCTeamSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9932B01CCE15F8009182BF /* ZCTeamSelectCell.m */; };
 		4C995A281CB6388000B832D7 /* ZCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C995A271CB6388000B832D7 /* ZCLoginViewController.m */; };
-		4CB6B9F61CB4D7BF00DB7447 /* ZCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6B9F51CB4D7BF00DB7447 /* ZCTestViewController.m */; };
 		4CC908E21CCB8A7000FE9079 /* ZCCommitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC908E11CCB8A7000FE9079 /* ZCCommitViewController.m */; };
 		4CC908E41CCB98B600FE9079 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC908E31CCB98B600FE9079 /* AVFoundation.framework */; };
 		4CD534301CCFBB630090FB2A /* ZCSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5342F1CCFBB630090FB2A /* ZCSettingTableViewController.m */; };
@@ -96,8 +95,6 @@
 		4C9932B01CCE15F8009182BF /* ZCTeamSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTeamSelectCell.m; sourceTree = "<group>"; };
 		4C995A261CB6388000B832D7 /* ZCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCLoginViewController.h; sourceTree = "<group>"; };
 		4C995A271CB6388000B832D7 /* ZCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCLoginViewController.m; sourceTree = "<group>"; };
-		4CB6B9F41CB4D7BF00DB7447 /* ZCTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTestViewController.h; sourceTree = "<group>"; };
-		4CB6B9F51CB4D7BF00DB7447 /* ZCTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTestViewController.m; sourceTree = "<group>"; };
 		4CC908E01CCB8A7000FE9079 /* ZCCommitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCommitViewController.h; sourceTree = "<group>"; };
 		4CC908E11CCB8A7000FE9079 /* ZCCommitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCommitViewController.m; sourceTree = "<group>"; };
 		4CC908E31CCB98B600FE9079 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -315,8 +312,6 @@
 		4CFC6FD51CB79E7600B0F5CC /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				4CB6B9F41CB4D7BF00DB7447 /* ZCTestViewController.h */,
-				4CB6B9F51CB4D7BF00DB7447 /* ZCTestViewController.m */,
 			);
 			name = Test;
 			sourceTree = "<group>";
@@ -554,7 +549,6 @@
 				4C59113F1CBA160200AEF3DF /* ZCWorkNewsModel.m in Sources */,
 				4CF45D6B1CC7B78400D87064 /* ZCTeamTableViewController.m in Sources */,
 				4CFC6FDB1CB79EC800B0F5CC /* ZCStudentUnionTableViewController.m in Sources */,
-				4CB6B9F61CB4D7BF00DB7447 /* ZCTestViewController.m in Sources */,
 				4C9932A81CCE0AB2009182BF /* ZCTeamDetailModel.m in Sources */,
 				4C4D61411CB368F0000E64F6 /* AppDelegate.m in Sources */,
 				4C5911451CBA26EF00AEF3DF /* ZCNewsDetailCell.m in Sources */,

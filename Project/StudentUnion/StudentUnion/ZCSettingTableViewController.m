@@ -8,6 +8,7 @@
 
 #import "ZCSettingTableViewController.h"
 #import "ZCLoginViewController.h"
+#import "ZCCommitViewController.h"
 #import <SDWebImage/SDImageCache.h>
 
 @interface ZCSettingTableViewController ()
@@ -59,6 +60,10 @@
 
         if (indexPath.row == 0) {
             // 我的简历
+//            ZCCommitViewController *commitVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ZCCommitViewController"];
+
+//            [self.navigationController pushViewController:commitVC animated:YES];
+
         } else {
             // 我的收藏
         }
@@ -72,7 +77,9 @@
                 
                 CGFloat cache = [[SDImageCache sharedImageCache] getSize];
                 self.cacheLabel.text = [NSString stringWithFormat:@"(%.2f MB)", cache *(1024*1024)];
-                [self.activityView stopAnimating];
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    [self.activityView stopAnimating];
+                });
             });
         }];
 

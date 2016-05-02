@@ -43,11 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZCSettingTableViewController.m" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZCSettingTableViewController.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StudentUnion/ZCSettingTableViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58365756">
-              <caret line="47" column="136" selection-start-line="47" selection-start-column="136" selection-end-line="47" selection-end-column="136" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZCCommitViewController.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/StudentUnion/ZCCommitViewController.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3846154">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,6 +74,7 @@
         <option value="$PROJECT_DIR$/StudentUnion/ZCCommitViewController.m" />
         <option value="$PROJECT_DIR$/StudentUnion/ZCTeamTableViewController.m" />
         <option value="$PROJECT_DIR$/StudentUnion/ZCSettingTableViewController.m" />
+        <option value="$PROJECT_DIR$/StudentUnion/ZCCommitViewController.h" />
       </list>
     </option>
   </component>
@@ -240,6 +251,10 @@
               <option name="myItemId" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pods" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -251,6 +266,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ZhiManager/zhimasterBoss.xcworkspace" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="StudentUnion" />
   </component>
   <component name="RunManager" selected="Application.StudentUnion">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="StudentUnion" TARGET_NAME="StudentUnion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="StudentUnion" RUN_TARGET_NAME="StudentUnion" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -355,7 +371,14 @@
       </EXTENSION>
       <method />
     </configuration>
-    <list size="10">
+    <configuration default="false" name="ChameleonFramework" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Pods" TARGET_NAME="ChameleonFramework" CONFIG_NAME="Debug" SCHEME_NAME="ChameleonFramework" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <list size="11">
       <item index="0" class="java.lang.String" itemvalue="Application.StudentUnion" />
       <item index="1" class="java.lang.String" itemvalue="Application.AFNetworking" />
       <item index="2" class="java.lang.String" itemvalue="Application.hpple" />
@@ -366,6 +389,7 @@
       <item index="7" class="java.lang.String" itemvalue="Application.Wilddog" />
       <item index="8" class="java.lang.String" itemvalue="Application.MBProgressHUD" />
       <item index="9" class="java.lang.String" itemvalue="Application.SDWebImage" />
+      <item index="10" class="java.lang.String" itemvalue="Application.ChameleonFramework" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -383,10 +407,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="23" width="1435" height="877" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15958188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15958188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -416,6 +440,32 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/StudentUnion/ZCCommitViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+          <folding>
+            <element signature="e#135#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentUnion/ZCTeamTableViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentUnion/ZCSettingTableViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/StudentUnion/ZCCommitViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -745,8 +795,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/StudentUnion/ZCSettingTableViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58365756">
-          <caret line="47" column="136" selection-start-line="47" selection-start-column="136" selection-end-line="47" selection-end-column="136" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentUnion/ZCCommitViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3846154">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
