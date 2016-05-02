@@ -58,20 +58,38 @@
 - (void)fetchNewData {
     
     AVQuery *query = [AVQuery queryWithClassName:@"TeamDetail"];
-    [query whereKey:@"teamName" equalTo:self.teamName];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-
-        if (!error) {
-            for (AVObject *object in objects) {
+    if (self.objectId) {
+        
+        [query getObjectInBackgroundWithId:self.objectId block:^(AVObject *object, NSError *error) {
+            
+            if (!error) {
                 ZCTeamDetailModel *model = [ZCTeamDetailModel modelWithAVObject:object];
                 self.model = model;
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.tableView reloadData];
                 });
             }
-        }
-
-    }];
+            
+        }];
+        
+    } else {
+        
+        [query whereKey:@"teamName" equalTo:self.teamName];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            
+            if (!error) {
+                for (AVObject *object in objects) {
+                    ZCTeamDetailModel *model = [ZCTeamDetailModel modelWithAVObject:object];
+                    self.model = model;
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self.tableView reloadData];
+                    });
+                }
+            }
+            
+        }];
+        
+    }
     
 }
 

@@ -21,6 +21,7 @@
 		4C5911451CBA26EF00AEF3DF /* ZCNewsDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5911441CBA26EF00AEF3DF /* ZCNewsDetailCell.m */; };
 		4C5911491CBA502B00AEF3DF /* ZCToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5911481CBA502B00AEF3DF /* ZCToolBar.m */; };
 		4C59114C1CBA558700AEF3DF /* UIImage+ZCOriginal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C59114B1CBA558700AEF3DF /* UIImage+ZCOriginal.m */; };
+		4C6F97AC1CD73BAF004DB25D /* ZCQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F97AB1CD73BAF004DB25D /* ZCQRCodeViewController.m */; };
 		4C9932A81CCE0AB2009182BF /* ZCTeamDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9932A71CCE0AB2009182BF /* ZCTeamDetailModel.m */; };
 		4C9932AB1CCE153D009182BF /* ZCTeamNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9932AA1CCE153D009182BF /* ZCTeamNameCell.m */; };
 		4C9932AE1CCE1553009182BF /* ZCTeamIntroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9932AD1CCE1553009182BF /* ZCTeamIntroCell.m */; };
@@ -83,6 +84,8 @@
 		4C5911481CBA502B00AEF3DF /* ZCToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCToolBar.m; sourceTree = "<group>"; };
 		4C59114A1CBA558700AEF3DF /* UIImage+ZCOriginal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZCOriginal.h"; sourceTree = "<group>"; };
 		4C59114B1CBA558700AEF3DF /* UIImage+ZCOriginal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZCOriginal.m"; sourceTree = "<group>"; };
+		4C6F97AA1CD73BAF004DB25D /* ZCQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCQRCodeViewController.h; sourceTree = "<group>"; };
+		4C6F97AB1CD73BAF004DB25D /* ZCQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCQRCodeViewController.m; sourceTree = "<group>"; };
 		4C9932A61CCE0AB2009182BF /* ZCTeamDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTeamDetailModel.h; sourceTree = "<group>"; };
 		4C9932A71CCE0AB2009182BF /* ZCTeamDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTeamDetailModel.m; sourceTree = "<group>"; };
 		4C9932A91CCE153D009182BF /* ZCTeamNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTeamNameCell.h; sourceTree = "<group>"; };
@@ -238,6 +241,8 @@
 				4CF45D6A1CC7B78400D87064 /* ZCTeamTableViewController.m */,
 				4CC908E01CCB8A7000FE9079 /* ZCCommitViewController.h */,
 				4CC908E11CCB8A7000FE9079 /* ZCCommitViewController.m */,
+				4C6F97AA1CD73BAF004DB25D /* ZCQRCodeViewController.h */,
+				4C6F97AB1CD73BAF004DB25D /* ZCQRCodeViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -544,6 +549,7 @@
 				4C0884B51CB952CB000F11C2 /* MBProgressHUD+ZCShow.m in Sources */,
 				4C0884B11CB90329000F11C2 /* ZCWorkNewsCell.m in Sources */,
 				4CD534301CCFBB630090FB2A /* ZCSettingTableViewController.m in Sources */,
+				4C6F97AC1CD73BAF004DB25D /* ZCQRCodeViewController.m in Sources */,
 				4C9932AB1CCE153D009182BF /* ZCTeamNameCell.m in Sources */,
 				4C59113F1CBA160200AEF3DF /* ZCWorkNewsModel.m in Sources */,
 				4CF45D6B1CC7B78400D87064 /* ZCTeamTableViewController.m in Sources */,

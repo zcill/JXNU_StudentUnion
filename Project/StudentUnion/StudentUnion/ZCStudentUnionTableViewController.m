@@ -11,9 +11,12 @@
 #import "ZCWorkNewsModel.h"
 #import "ZCNewsDetailTableViewController.h"
 #import "ZCTeamTableViewController.h"
+#import "ZCQRCodeViewController.h"
 
-@interface ZCStudentUnionTableViewController ()
+@interface ZCStudentUnionTableViewController ()<ZCQRCodeViewControllerDelegate>
+
 @property (nonatomic, strong) NSMutableArray *dataSource;
+
 @end
 
 @implementation ZCStudentUnionTableViewController
@@ -71,12 +74,28 @@
         ZCNewsDetailTableViewController *vc = (ZCNewsDetailTableViewController *)[segue destinationViewController];
         AVObject *newsObject = _dataSource[indexPath.row];
         vc.objectId = newsObject.objectId;
+    } else if ([segue.identifier isEqualToString:@"presentToQRCodeReader"]) {
+        
+        ZCQRCodeViewController *QRCodeVC = [segue destinationViewController];
+        QRCodeVC.delegate = self;
+        
     } else {
         
         ZCTeamTableViewController *team = (ZCTeamTableViewController *)[segue destinationViewController];
         team.teamName = sender.currentTitle;
         
     }
+}
+
+#pragma mark - QRReaderViewControllerDelegate
+
+- (void)didFinishedReadingQR:(NSString *)string {
+    
+    ZCTeamTableViewController *team = [self.storyboard instantiateViewControllerWithIdentifier:@"ZCTeamTableViewController"];
+//    team.teamName = string;
+    team.objectId = string;
+    [self.navigationController pushViewController:team animated:YES];
+    
 }
 
 #pragma mark - Table view data source

@@ -14,6 +14,7 @@ pod 'Wilddog'
 pod 'IQKeyboardManager'
 pod 'ReactiveCocoa', '~> 2.5'
 pod 'SDWebImage'
+pod 'ChameleonFramework'
 
 end
 

@@ -10,6 +10,7 @@
 
 @interface ZCTeamTableViewController : UITableViewController
 
-@property (nonatomic, strong) NSString *teamName;
+@property (nonatomic, copy) NSString *teamName;
+@property (nonatomic, copy) NSString *objectId;
 
 @end

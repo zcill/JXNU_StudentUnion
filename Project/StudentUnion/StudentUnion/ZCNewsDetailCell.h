@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *newsTitleLabel;
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView;
 @property (weak, nonatomic) IBOutlet UILabel *postTimeLabel;
+@property (weak, nonatomic) IBOutlet UIView *bannerView;
 
 @property (nonatomic, strong) ZCWorkNewsModel *model;
 

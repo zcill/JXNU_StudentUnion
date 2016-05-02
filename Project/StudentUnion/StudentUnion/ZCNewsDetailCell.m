@@ -14,7 +14,6 @@
     _model = model;
     
     self.newsTitleLabel.text = [model valueForKey:@"title"];
-    
     self.contentTextView.text = [model valueForKey:@"content"];
     
 }

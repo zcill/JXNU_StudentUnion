@@ -11,6 +11,9 @@
 #import <SDWebImage/SDImageCache.h>
 
 @interface ZCSettingTableViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *cacheLabel;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 
 @end
 
@@ -31,9 +34,16 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    CGFloat cache = [[SDImageCache sharedImageCache] getSize];
+    self.cacheLabel.text = [NSString stringWithFormat:@"(%.2f MB)", cache/(1024*1024)];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
+    [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:@"http://7xrf6x.com1.z0.glb.clouddn.com/StudentUnion/Test/1.pic_hd.jpg"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,12 +63,19 @@
             // 我的收藏
         }
     } else if (indexPath.section == 1) {
-        // 清理缓存
-        [[SDImageCache sharedImageCache] getDiskCount];
-        [[SDImageCache sharedImageCache] cleanDiskWithCompletionBlock:^{
-            [[SDImageCache sharedImageCache] getSize];
-        }];
         
+        [self.activityView startAnimating];
+        
+        // 清理缓存
+        [[SDImageCache sharedImageCache] clearDiskOnCompletion:^{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                CGFloat cache = [[SDImageCache sharedImageCache] getSize];
+                self.cacheLabel.text = [NSString stringWithFormat:@"(%.2f MB)", cache *(1024*1024)];
+                [self.activityView stopAnimating];
+            });
+        }];
+
     } else if (indexPath.section == 2) {
         if (indexPath.row == 1) {
             // 把软件分享给朋友
@@ -69,6 +86,5 @@
         // 意见反馈 开源协议 关于开发者
     }
 }
-
 
 @end
