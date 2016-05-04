@@ -409,7 +409,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <inset key="titleEdgeInsets" minX="-33" minY="40" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="12" minY="-15" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" title="院职协" image="banner_zhixie">
+                                    <state key="normal" title="自律部" image="banner_zhixie">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
                                     <connections>
@@ -1410,7 +1410,7 @@
                             </tableViewSection>
                             <tableViewSection id="ocK-0H-TzZ">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="j65-SY-aPN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="j65-SY-aPN">
                                         <rect key="frame" x="0.0" y="324" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j65-SY-aPN" id="jDC-UE-c7b">

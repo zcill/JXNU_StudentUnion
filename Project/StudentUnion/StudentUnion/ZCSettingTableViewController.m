@@ -54,7 +54,6 @@
 
 #pragma mark - talbeView delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     if (indexPath.section == 0) {
 
@@ -84,14 +83,17 @@
         }];
 
     } else if (indexPath.section == 2) {
-        if (indexPath.row == 1) {
+        if (indexPath.row == 0) {
             // 把软件分享给朋友
-        } else if (indexPath.row == 2) {
+            
+            
+        } else if (indexPath.row == 1) {
             // 给软件评个分
         }
     } else if (indexPath.section == 3) {
         // 意见反馈 开源协议 关于开发者
     }
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

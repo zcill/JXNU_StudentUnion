@@ -9,14 +9,23 @@
 #import "AppDelegate.h"
 #import "ZCTabBarController.h"
 #import "ZCLoginViewController.h"
+// WeChat SDK
+#import <ShareSDK3/WXApi.h>
 
-@interface AppDelegate ()
+@interface AppDelegate ()<WXApiDelegate>
 
 @end
 
 @implementation AppDelegate
 
 #pragma mark - private method
+// Wechat Share
+- (void)shareWithWeChat {
+
+    [WXApi registerApp:@"wxd6184f559ac6dd8d"];
+
+}
+
 // 检查版本
 - (void)checkVersionNubmer {
     
@@ -72,11 +81,20 @@
 
 #pragma mark - Life Cycle
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self shareWithWeChat];
     [self setLeanCloud];
     [self checkVersionNubmer];
     [self whiteStatusBar];
     [self setRootViewController];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [WXApi handleOpenURL:url delegate:self];
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *)options {
+    return [WXApi handleOpenURL:url delegate:self];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

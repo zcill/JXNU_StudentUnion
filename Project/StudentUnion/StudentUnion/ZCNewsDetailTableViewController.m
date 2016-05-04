@@ -9,6 +9,7 @@
 #import "ZCNewsDetailTableViewController.h"
 #import "ZCNewsDetailCell.h"
 #import "ZCWorkNewsModel.h"
+#import <ShareSDK3/WXApi.h>
 
 @interface ZCNewsDetailTableViewController ()
 
@@ -124,12 +125,51 @@
     
     // 按钮
     UIBarButtonItem *backItem = [self barButtonItemWithImageNamed:@"toolbar_back" action:@selector(backToLastViewController:) width:25 height:25];
-    UIBarButtonItem *wechatItem = [self barButtonItemWithImageNamed:@"toolbar_wechat" action:nil width:29.6 height:25];
-    UIBarButtonItem *pengyouquanItem = [self barButtonItemWithImageNamed:@"toolbar_pengyouquan" action:nil width:25 height:25];
+    UIBarButtonItem *wechatItem = [self barButtonItemWithImageNamed:@"toolbar_wechat" action:@selector(shareMessageWithWeChat) width:29.6 height:25];
+    UIBarButtonItem *pengyouquanItem = [self barButtonItemWithImageNamed:@"toolbar_pengyouquan" action:@selector(sharePengyouquanWithWeChat) width:25 height:25];
     UIBarButtonItem *weiboItem = [self barButtonItemWithImageNamed:@"toolbar_weibo" action:nil width:29.5 height:25];
     UIBarButtonItem *moreItem = [self barButtonItemWithImageNamed:@"toolbar_more" action:nil width:25 height:25];
     
     self.toolbarItems = @[fixedSpace, backItem, flexibleSpace, wechatItem, flexibleSpace, pengyouquanItem, flexibleSpace, weiboItem, flexibleSpace, moreItem, fixedSpace];
+}
+
+#pragma mark - share
+- (void)shareMessageWithWeChat {
+
+    WXMediaMessage *message = [WXMediaMessage message];
+    message.title = @"师大助手";
+    message.description = @"我在师大助手上看校内新闻分享给你";
+    [message setThumbImage:[UIImage imageNamed:@"logo.png"]];
+
+    WXWebpageObject *object = [WXWebpageObject object];
+    object.webpageUrl = @"https://zcill.com";
+    message.mediaObject = object;
+
+    SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
+    req.message = message;
+    req.bText = NO;
+    req.scene = WXSceneSession;
+    [WXApi sendReq:req];
+
+}
+
+- (void)sharePengyouquanWithWeChat {
+
+    WXMediaMessage *message = [WXMediaMessage message];
+    message.title = @"师大助手";
+    message.description = @"测试分享朋友圈";
+    [message setThumbImage:[UIImage imageNamed:@"logo.png"]];
+
+    WXWebpageObject *object = [WXWebpageObject object];
+    object.webpageUrl = @"https://zcill.com";
+    message.mediaObject = object;
+
+    SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
+    req.message = message;
+    req.bText = NO;
+    req.scene = WXSceneTimeline;
+    [WXApi sendReq:req];
+
 }
 
 @end
