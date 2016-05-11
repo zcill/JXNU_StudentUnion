@@ -9,7 +9,7 @@
 #import "ZCSettingTableViewController.h"
 #import "ZCLoginViewController.h"
 #import "ZCCommitViewController.h"
-#import <SDWebImage/SDImageCache.h>
+#import <ShareSDK3/WXApi.h>
 
 @interface ZCSettingTableViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *cacheLabel;
@@ -85,8 +85,20 @@
     } else if (indexPath.section == 2) {
         if (indexPath.row == 0) {
             // 把软件分享给朋友
-            
-            
+            WXWebpageObject *object = [WXWebpageObject object];
+            object.webpageUrl = @"https://zcill.com";
+
+            WXMediaMessage *message = [WXMediaMessage message];
+            message.title = @"师大助手";
+            message.description = @"向你分享这个软件";
+            message.mediaObject = object;
+
+            SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
+            req.bText = NO;
+            req.message = message;
+            req.scene = WXSceneSession;
+            [WXApi sendReq:req];
+
         } else if (indexPath.row == 1) {
             // 给软件评个分
         }

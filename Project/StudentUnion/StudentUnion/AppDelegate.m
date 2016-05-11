@@ -12,7 +12,7 @@
 // WeChat SDK
 #import <ShareSDK3/WXApi.h>
 
-@interface AppDelegate ()<WXApiDelegate>
+@interface AppDelegate ()<WXApiDelegate, UIAlertViewDelegate>
 
 @end
 
@@ -23,6 +23,18 @@
 - (void)shareWithWeChat {
 
     [WXApi registerApp:@"wxd6184f559ac6dd8d"];
+
+}
+
+// WeChat 返回
+- (void)onResp:(BaseResp *)resp {
+
+    if ([resp isKindOfClass:[SendMessageToWXResp class]]) {
+        if (resp.errCode == WXErrCodeUserCancel) {
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"取消分享" message:@"用户点击了取消" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            [alertView show];
+        }
+    }
 
 }
 
